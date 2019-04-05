@@ -12,22 +12,34 @@ public class Main {
 //
 //        Create an application that:
 //        - prints if your user input is a palindrome or not
-//
-//#### Examples:
-//        input|output
-//:-|:-:
-//        `Amazon`|`no`
-//        `Amazama`|`yes`
-//
-//                **Note:** Java is case-sensitive by default, and by default will consider, say, `E` to be different from `e`
+
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string to check if it is a palindrome");
         String word = sc.nextLine();
 
-        for (int i = word.length() - 1; i >= 0; i--) {
-            char c = word.charAt(i);
-            System.out.print(c);
+        int length  = word.length();
+        int i, begin, end, middle;
 
+        begin  = 0;
+        end    = length - 1;
+        middle = (begin + end)/2;
+
+        for (i = begin; i <= middle; i++) {
+            if (word.charAt(begin) == word.charAt(end)) {
+                begin++;
+                end--;
+            }
+            else {
+                break;
+            }
         }
+        if (i == middle + 1) {
+            System.out.println("Palindrome");
+        }
+        else {
+            System.out.println("Not a palindrome");
+        }
+
     }
 }

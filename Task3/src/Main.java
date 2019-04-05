@@ -12,8 +12,7 @@ public class Main {
 //
 //                Create an application that:
 //        - prints 40 Fibonacci numbers
-//
-//        _(if you are curious, after the test you can learn more about the Fibonacci spiral here: https://en.wikipedia.org/wiki/Fibonacci_number )_
+/
 
         int x1 = 0;
         int x2 = 1;

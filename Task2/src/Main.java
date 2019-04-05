@@ -12,11 +12,6 @@ public class Main {
 //        ### Task 2 (extra):
 //        Instead of just printing if everyone can make it, print for every person in the queue, if they can make it in
 //
-//        #### Examples:
-//        input1|input2|output
-//
-//        `54`|`3`|`fit`<br>`fit`<br>`fit`
-//        `98`|`5`|`fit`<br>`fit`<br>`can't fit`<br>`can't fit`<br>`can't fit`
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the amount of people in the room:");
